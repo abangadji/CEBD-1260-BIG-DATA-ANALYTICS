@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello {{name}}!</h1>
+
+<form action="http://localhost:5000/predict_price" method="post">
+
+    <p>Bedrooms:
+    <select name="bedrooms">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    </p>
+    <p>Bathrooms:
+    <select name="bathrooms">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    </p>
+    <p>Square foot: <input type="text" name="sqft_living15"/></p>
+    <p>Grade:
+    <select name="grade">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+    </select>
+    </p>
+    <p>Condition:
+    <select name="condition">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="4">5</option>
+    </select>
+    </p>
+    <p><input type="submit" value="Predict Price"/></p>
+
+
+</form>
+</body>
+</html>
